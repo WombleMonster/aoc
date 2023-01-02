@@ -1,8 +1,7 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.SortedSet;
-import java.util.TreeSet;
+;
 
 public class Main {
     private static String filename = "input.txt";
@@ -26,7 +25,7 @@ public class Main {
             System.out.println(e);
         }
 
-        System.out.println(total);
+        System.out.println("total = " + total);
     }
 
     private static void partTwo() {
