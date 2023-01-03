@@ -1,0 +1,3 @@
+# Advent of Code 2022
+
+My attempt at learning Java by going through the Advent of code 2022. Should be an interesting journey...
