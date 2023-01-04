@@ -1,0 +1,37 @@
+package days.dayX;
+
+import java.io.IOException;
+import java.util.*;
+import util.InputLoader;
+
+import days.Day;
+
+public class DayX implements Day {
+    private final String filename = "input/dayX.txt";
+    private List<String> input;
+
+    @Override
+    public void initialize() {
+        System.out.println("Day X");
+
+        try {
+            input = InputLoader.loadList(filename);
+        } catch (IOException e) {
+            System.out.println(e);
+        }
+    }
+
+    @Override
+    public void partOne() {
+        System.out.println("Part One");
+
+
+    }
+
+    @Override
+    public void partTwo() {
+        System.out.println("Part Two");
+
+
+    }
+}

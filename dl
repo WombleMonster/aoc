@@ -1,2 +1,10 @@
 #!/bin/sh
-curl -b session=53616c7465645f5fe99319146d13dc0f8bc1d0a919141799b6eb7ba6a6b35f7f07e20711420b42982a94c70dddbb6f5e45f1349c55c00bd4676e59bb7c5ac0b1 $1
+if [ ! -d days/day$1 ]; then
+  mkdir days/day$1
+fi;
+
+if [ ! -f days/day$1/Day$1.java ]; then
+  cp Day.java.tmpl days/day$1/Day$1.java
+fi;
+
+curl -b session=53616c7465645f5fe99319146d13dc0f8bc1d0a919141799b6eb7ba6a6b35f7f07e20711420b42982a94c70dddbb6f5e45f1349c55c00bd4676e59bb7c5ac0b1 https://adventofcode.com/2022/day/$1/input > input/day$1.txt
