@@ -104,17 +104,8 @@ public class Day10 implements Day {
         int machineCycle = 1;
         int pixelPosition = 0;
         char[] pixelLine = blankPixelLine();
+
         while (true) {
-            // System.out.printf("machineCycle %d: executing '%s'\n", machineCycle,
-            // command);
-
-            // if (interestingCycles.contains(machineCycle)) {
-            // // do something
-            // System.out.printf("* cycle=%d, signal strength=%d *\n", machineCycle,
-            // machineCycle * regs.X);
-            // total += machineCycle * regs.X;
-            // }
-
             // DRAW PIXEL
             if ((pixelPosition == regs.X) || (pixelPosition == regs.X - 1) || (pixelPosition == regs.X + 1)) {
                 pixelLine[pixelPosition] = '#';
