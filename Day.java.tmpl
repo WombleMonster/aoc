@@ -1,4 +1,4 @@
-package days.dayX;
+package days.day__X__;
 
 import java.io.IOException;
 import java.util.*;
@@ -6,18 +6,19 @@ import util.InputLoader;
 
 import days.Day;
 
-public class DayX implements Day {
-    private final String filename = "input/dayX.txt";
+public class Day__X__ implements Day {
+    private final String filename = "input/day__X__.txt";
     private List<String> input;
 
     @Override
     public void initialize() {
-        System.out.println("Day X");
+        System.out.println("Day __X__");
 
         try {
             input = InputLoader.loadList(filename);
         } catch (IOException e) {
             System.out.println(e);
+            System.exit(1);
         }
     }
 
